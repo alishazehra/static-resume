@@ -3,48 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Resume </title>
+    <title>My Resume</title>
     <link rel="stylesheet" href="styles.css">
+    
+    <header>
+        <img style="border-radius: 50%; height: 50px; width: 50px;" src="https://cdn-icons-png.flaticon.com/512/4310/4310175.png" alt="Profile Image">
+        <span>My Resume</span>
+    </header>
+    <div class="container"><img src="alishaa.jpg"   alt="me">
+        
+        <h1 style="padding: 20px;">My name is Syeda Alisha Zehra, I am a Web Developer by professsion and an educationalist. <br> Currently working on Ai technologies.
+            I am a passionate and skilled Web Developer with extensive experience in creating dynamic, user-friendly websites.</h1>
+       
+    
+    </div>
+    <h1 class="h1">Work Experience:</h1>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th class="a">Job Title</th>
+                    <th class="a">Company</th>
+                    <th class="a">Duration</th>
+                    <th class="a">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="job-title">Frontend Developer</td>
+                    <td class="company-name">Tech Solutions Inc.</td>
+                    <td class="date">Jan 2023 - Present</td>
+                    <td class="p">Worked on developing interactive and responsive web applications using HTML, CSS, and JavaScript.</td>
+                </tr>
+                <tr><td class="a">UI/UX Designer</td>
+                    <td class="a">Creative Designs Studio</td>
+                    <td class="a">Mar 2021 - Dec 2022</td>
+                    <td class="a">Designed user interfaces and optimized user experiences for various mobile and web applications.</td>
+                </tr>
+                <tr><td class="job-title">Web Developer</td>
+                    <td class="company-name">WebWorks Ltd.</td>
+                    <td class="date">Jun 2019 - Feb 2021</td>
+                    <td class="p">Developed and maintained websites, focusing on performance optimization and cross-browser compatibility.</td>
+                </tr>
+                <tr>
+                    <td class="a">Software Engineer Intern</td>
+                    <td class="a">Tech Innovators</td>
+                    <td class="a">Jun 2018 - Aug 2018</td>
+                    <td class="a">Assisted in backend development using Python and contributed to the development of API services.</td>
+                </tr>
+            </tbody></table>
+     <h1 class="h1">Education: </h1> <h2>O and A levels completed</h2>
+     <h1 class="h1">Educational institute:</h1>
+     <h2>Happy Palace Grammar School and College </h2>
+     <h4>(2019-2024)</h4>
+     <h1 class="h1">Certifications and courses:</h1>
+     <h2>Certified Microsoft Engineer</h2>
+     
+      <div class="button">
+        <button class="rounded-btn" onclick="displaySkills()">Display Skills</button>
+    </div><div class="skills" id="skills"> <br>
+        <h2 class="h2">- HTML</h2>
+        <h2 class="h2">- CSS</h2>
+        <h2 class="h2">- TypeScript</h2>
+        <h2 class="h2">- Python</h2>
+    </div><script>
+        function displaySkills() {
+            // Toggle the display of skills
+            const skillsDiv = document.getElementById("skills");
+            if (skillsDiv.style.display === "none" || skillsDiv.style.display === "") {
+                skillsDiv.style.display = "block";
+            } else {
+                skillsDiv.style.display = "none";
+            }
+        }
+    </script> 
+    <br>
+        </div> 
+
+        
+        </div>
+        <div class="bio-container">
+<h1 class="h">Personal information:</h1>
+<p>
+    Hi, I'm  Alisha Zehra, a passionate web developer with a deep love for creating beautiful, functional, and user-friendly websites. With several years of experience in front-end and back-end development, I specialize in HTML, CSS, JavaScript, and various frameworks like React and Node.js. 
+    I believe that good design and clean code are the backbone of a successful web project. I strive to stay on top of the latest trends and technologies to ensure that the projects I work on are both cutting-edge and maintainable.
+    <br><br>
+    Whether it's building a simple landing page or a complex web application, I approach every project with the same level of dedication and attention to detail. My goal is to create seamless, engaging digital experiences that meet the needs of the user while achieving the business goals of my clients.
+    <br><br>
+    Outside of coding, I enjoy learning new technologies, contributing to open-source projects, and constantly improving my craft. I'm always looking for new challenges and opportunities to grow as a developer. Feel free to reach out if you'd like to collaborate or discuss potential projects!
+</p></div>
+
+        <footer>
+            <p>&copy; 2025 Your Website Name. All Rights Reserved.</p>
+            <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+        </footer>
+    
+    
 </head>
 <body>
-    <div class="form-container">
-        <h1>Static resume</h1>
-        <div class="form-group">
-            
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" value="Syeda Alisha Zehra" readonly>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" value="alishazehra866@gmail.com" readonly>
-            </div>
-            <div class="form-group">
-                <label for="education">Education:</label>
-                <input type="text" id="education" value="A Levels" readonly>
-            </div>
-            <div class="form-group">
-                <label for="experience">Experience:</label>
-                <textarea id="experience" rows="4" readonly>3</textarea>
-            </div>
-            <div class="form-group">
-                <label for="skills">Skills:</label>
-                <input type="text" id="skills" value="TypeScript, JavaScript, HTML, CSS" readonly>
-                <button id="toggleSkillsBtn">Display Skills</button>
-<div id="skillsSection" class="hidden">
-    <h2>Skills</h2>
-    <ul>
-        <li>JavaScript</li>
-        <li>TypeScript</li>
-        <li>HTML & CSS</li>
-    </ul>
-</div>
-
-            </div>
-            <button type="button" id="submitButton">Submit</button>
-        </form>
-    </div>
-    <script src="script.js"></script>
+    
 </body>
 </html>  
- 
- 
+
+   
+
+
+
+   
